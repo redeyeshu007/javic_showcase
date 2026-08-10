@@ -1,0 +1,20 @@
+/* ─── Framer Motion / scroll animation helpers ───────────────── */
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1.0; }
+}
+.animate-glow-pulse { animation: glow-pulse 4s ease-in-out infinite; }
+
+@keyframes scroll-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(5px); }
+}
+.animate-scroll-bounce { animation: scroll-bounce 1.8s ease-in-out infinite; }
+
+/* ─── Stagger reveal helpers ─────────────────────────────────── */
+.stagger-child:nth-child(1) { animation-delay: 0.05s; }
+.stagger-child:nth-child(2) { animation-delay: 0.10s; }
+.stagger-child:nth-child(3) { animation-delay: 0.15s; }
+.stagger-child:nth-child(4) { animation-delay: 0.20s; }
+.stagger-child:nth-child(5) { animation-delay: 0.25s; }
+.stagger-child:nth-child(6) { animation-delay: 0.30s; }
