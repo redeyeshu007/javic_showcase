@@ -29,7 +29,7 @@ export default function ProductOutcome({ product }) {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="pt-2"
           >
-            <p className="text-[#4b5563] text-[16px] leading-relaxed mb-8 max-w-3xl">
+            <p className="text-[#4b5563] text-[16px] leading-relaxed mb-8 max-w-3xl text-justify">
               {product.outcomeDescription}
             </p>
             {product.websiteUrl && (

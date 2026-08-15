@@ -4,6 +4,28 @@
 
 import nexusAiImg    from '../assets/products/nexus-ai.webp';
 import logoTextImg   from '../assets/products/logo-text.png';
+import printrickHeroImg from '../assets/products/printrick-hero.png';
+import printrickLogo from '../assets/products/printrick-logo.png';
+import printrickCardImg from '../assets/products/printrick-card-new.png';
+import printrickLogo1 from '../assets/products/printrick_logo1.png';
+import printrickLogo2 from '../assets/products/printrick_logo2.png';
+import printrickLogo3 from '../assets/products/printrick_logo_new3.png';
+import printrickFullBanner from '../assets/products/printrick-full-banner.png';
+import printrickDesignReq1 from '../assets/products/design-req-1.png';
+import printrickDesignReq2 from '../assets/products/design-req-2.png';
+import printrickDesignReq3 from '../assets/products/design-req-3.jpeg';
+import printrickDesignImage from '../assets/products/printrick-design-image.png';
+import printrickDesignImage2 from '../assets/products/printrick-design-image-2.png';
+import printrickDesignImage3 from '../assets/products/printrick-design-image-3.png';
+import printrickConversionsImage from '../assets/products/printrick-conversions-image.png';
+import eastGoldLogo from '../assets/products/east-gold-logo.webp';
+import eastGoldCard from '../assets/products/east-gold-card.png';
+import eastGoldHero from '../assets/products/east-gold-hero.png';
+import eastGoldDesign1 from '../assets/products/east-gold-design-1.png';
+import eastGoldDesign2 from '../assets/products/east-gold-design-2.png';
+import eastGoldFullBanner from '../assets/products/east-gold-full-banner-new.png';
+import eastGoldVideo1 from '../assets/products/east-gold-video-1.mp4';
+import eastGoldVideo2 from '../assets/products/east-gold-video-2.mp4';
 
 export const CATEGORIES = ['All', 'Development', 'UI/UX', 'Branding', 'Social Media', 'Marketing'];
 
@@ -14,15 +36,14 @@ export const products = [
     name: 'Printrick',
     category: 'Development',
     categories: ['Development', 'Branding', 'UI/UX'],
-    tagline: 'Intelligence that works behind the scenes.',
+    tagline: 'Intelligence that works behind the scenes for Printrick.',
     shortDescription:
       `An intelligent platform designed to automate complex workflows and help teams work smarter at scale.`,
     description:
       `Printrick is a next-generation workflow intelligence platform that leverages machine learning to identify bottlenecks, automate repetitive processes, and surface insights that drive smarter decisions. Built for teams that move fast and think bigger.`,
-    image: logoTextImg,
-    thumbnail: logoTextImg,
+    image: printrickHeroImg,
+    thumbnail: printrickCardImg,
     featured: true,
-    year: '2026',
     tags: ['AI', 'Automation', 'Analytics', 'SaaS'],
     route: '/products/printrick',
     metrics: [
@@ -46,6 +67,24 @@ export const products = [
       'Development Phase: 3 Weeks'
     ],
     client: 'Printrick Inc',
+    logos: [
+      { image: printrickLogo1 },
+      { image: printrickLogo2 },
+      { image: printrickLogo3 }
+    ],
+    fullBanner: printrickFullBanner,
+    designTitle: "Modern & Sleek\nDesign",
+    designDescription: "The modern and sleek design of the Printrick platform aligns with the brand's sophisticated style, providing a seamless and intuitive user experience. The design effectively highlights the printing solutions while maintaining a clean, elegant aesthetic that resonates with both the brand vision and stakeholder expectations.",
+    designImages: [printrickDesignImage, printrickDesignImage2, printrickDesignImage3],
+    conversionsTitle: "Focusing on more\nConversions Tactics",
+    conversionsSubtitle: "Check Out More on the website",
+    conversionsDescription: "The moodboards feature vibrant, bold colors and clean typography tailored for modern printing solutions. The imagery is professional, energetic, and minimalist, focusing on product details in clean settings. Soft gradients and graphic patterns add a premium feel. This aesthetic emphasizes quality, speed, and creative flexibility.",
+    conversionsImage: printrickConversionsImage,
+    designRequirementsImages: [
+      printrickDesignReq1,
+      printrickDesignReq2,
+      printrickDesignReq3
+    ],
     moodboardDescription: "The moodboards feature vibrant, bold colors like neon pink, yellow, and green, combined with playful typography and modern jewelry designs. The imagery is youthful, energetic, and minimalist, focusing on product details in colorful, abstract settings. Soft gradients and graphic patterns add a trendy feel. This aesthetic appeals to Gen Z, emphasizing individuality, fun, and creativity.",
     moodboards: [
       { title: "Gradient Mesh", image: logoTextImg },
@@ -68,8 +107,10 @@ export const products = [
     ],
     outcomeDescription: "The newly designed brand identity and website for Printrick successfully capture the brand's elegant and trendy essence. The cohesive design aligns with stakeholder vision and brand goals, offering a seamless, user-friendly experience while beautifully showcasing the platform and enhancing customer engagement.",
     websiteUrl: "https://printrick.com/",
-    challenge:
-      `Enterprise teams were spending 40-60% of their workweek on tasks that could be systematically automated. Existing tools either required deep technical knowledge or were too rigid to adapt to evolving business logic.`,
+    challenge: [
+      `Printrick is an exclusive platform dedicated to delivering premium printing solutions. When we began analyzing their process, the workflow was purely functional but creating significant bottlenecks for enterprise teams.`,
+      `With <strong>40-60% of workweeks</strong> spent on manual tasks, the existing tools were either requiring deep technical knowledge or were too rigid. We needed to transform the experience from a basic system to an adaptive, intelligent platform that scales.`
+    ],
     solution:
       `We designed Printrick with an adaptive rule engine that trains on your team's existing patterns. The platform surfaces automation opportunities in real-time, allows no-code configuration of complex workflows, and provides full observability through a real-time analytics layer.`,
     features: [
@@ -87,6 +128,45 @@ export const products = [
     ],
     techStack: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'Redis', 'Kubernetes', 'OpenAI API', 'Temporal'],
     gallery: [logoTextImg, logoTextImg, logoTextImg],
+  },
+  {
+    id: 2,
+    slug: 'east-gold',
+    name: 'East Gold',
+    category: 'Finance',
+    categories: ['Finance', 'Services', 'Retail'],
+    tagline: 'Professional gold valuation and buying services.',
+    shortDescription: 'East Gold provides professional gold valuation and gold-buying services in Coimbatore, with a focus on transparent purity testing and a clear evaluation process.',
+    description: 'East Gold provides professional gold valuation and gold-buying services in Coimbatore, with a focus on transparent purity testing and a clear evaluation process. We aim to make every gold-selling experience simple, secure, and easy to understand, with prompt payment after the required verification and valuation are completed.',
+    image: eastGoldHero,
+    thumbnail: eastGoldCard,
+    featured: true,
+    tags: ['Gold Valuation', 'Secure', 'Transparent'],
+    route: '/products/east-gold',
+    metrics: [
+      { value: '100%', label: 'Transparency' },
+      { value: '24/7', label: 'Support' }
+    ],
+    overview: [
+      'East Gold provides professional gold valuation and gold-buying services in Coimbatore, with a focus on transparent purity testing and a clear evaluation process.',
+      'We aim to make every gold-selling experience simple, secure, and easy to understand, with prompt payment after the required verification and valuation are completed.'
+    ],
+    objective: 'The primary objective of East Gold is to establish a trustworthy and transparent gold valuation and buying service in Coimbatore. The project aims to create a secure, seamless, and customer-friendly experience for individuals looking to sell their gold, ensuring clear evaluation processes and prompt payments.',
+    client: 'Founder, East Gold',
+    planOfAction: 'The project for East Gold involved understanding the nuances of the gold valuation market through rapid knowledge transfer, creating trust-building visual mockups for mobile and desktop, and developing a secure, customer-centric website. Following the launch, we seamlessly integrated a continuous, robust digital marketing strategy—spanning Meta and Google Ads—to drive immediate visibility and conversions, successfully showcasing East Gold\'s transparent evaluation process to the Coimbatore market.',
+    scopeOfWork: ['Meta Ads', 'Google Ads', 'Branding', 'Website Development'],
+    duration: [
+      'Website Development',
+      'Ads: Continuous'
+    ],
+    fullBanner: eastGoldFullBanner,
+    designTitle: 'Brand Colors & Typo',
+    designDescription: 'With stakeholders’ approval, we introduced refined typography and a sophisticated color palette that align with East Gold’s premium and trustworthy brand voice, creating a modern yet authentic visual identity.',
+    designImages: [eastGoldDesign1],
+    preVideoImage: eastGoldDesign2,
+    videos: [eastGoldVideo1, eastGoldVideo2],
+    outcomeDescription: "The newly developed website and continuous marketing strategy for East Gold successfully established their digital presence. By aligning the platform with their trustworthy evaluation process, the design enhances customer confidence, streamlines lead generation, and significantly improves their visibility across the Coimbatore market.",
+    websiteUrl: "https://eastgold.co.in/"
   }
 ];
 

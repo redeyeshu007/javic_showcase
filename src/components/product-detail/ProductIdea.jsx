@@ -26,7 +26,7 @@ export default function ProductIdea({ product }) {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <p className="text-[#4b5563] text-[15px] leading-relaxed">
+            <p className="text-[#4b5563] text-[15px] leading-relaxed text-justify">
               {product.ideaDescription}
             </p>
           </motion.div>

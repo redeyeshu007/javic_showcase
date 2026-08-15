@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function ProductOverview({ product }) {
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section className="pt-20 pb-10 lg:pt-28 lg:pb-12 bg-white">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
           
@@ -17,7 +17,7 @@ export default function ProductOverview({ product }) {
             <h2 className="text-4xl lg:text-5xl font-bold text-[#1a1a1a] tracking-tight">
               {product.name}
             </h2>
-            <div className="flex flex-col gap-4 text-[#4b5563] text-base lg:text-lg leading-relaxed">
+            <div className="flex flex-col gap-5 text-[#4b5563] text-base lg:text-[17px] leading-[1.7] text-justify">
               {Array.isArray(product.overview) ? (
                 product.overview.map((paragraph, idx) => (
                   <p key={idx}>{paragraph}</p>
@@ -39,7 +39,7 @@ export default function ProductOverview({ product }) {
             {/* Objective */}
             <div className="mb-10">
               <h3 className="text-xl font-semibold text-[#1a1a1a] mb-3">Objective</h3>
-              <p className="text-[#4b5563] text-base leading-relaxed">
+              <p className="text-[#4b5563] text-base leading-relaxed text-justify">
                 {product.objective}
               </p>
             </div>

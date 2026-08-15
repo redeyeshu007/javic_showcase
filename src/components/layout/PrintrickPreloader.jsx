@@ -7,10 +7,10 @@ export default function PrintrickPreloader() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Total animation time is around 3.5s
+    // Total display time is 1.5s
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3500);
+    }, 1500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -20,50 +20,46 @@ export default function PrintrickPreloader() {
         <motion.div
           key="printrick-preloader"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, y: "-10%" }}
-          transition={{ duration: 0.8, ease: [0.76, 0, 0.24, 1] }}
+          exit={{ opacity: 0, filter: 'blur(10px)', transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
           className="fixed inset-0 z-[99999] flex flex-col items-center justify-center bg-white"
         >
-          <div className="relative z-10 flex flex-col items-center justify-center gap-6">
+          <div className="relative z-10 flex flex-col items-center justify-center">
             {/* Printrick Logo */}
-            <motion.div
-              initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
-              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-              transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full flex justify-center"
-            >
+            <div className="w-full flex justify-center mb-2">
               <img
                 src={printrickLogo}
                 alt="Printrick"
-                className="h-24 md:h-32 w-auto block mx-auto object-contain pr-4"
+                className="h-20 md:h-28 w-auto block mx-auto object-contain mix-blend-multiply"
               />
-            </motion.div>
+            </div>
 
-            {/* "by" Text */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, filter: 'blur(5px)' }}
-              animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
-              transition={{ duration: 0.8, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="flex items-center gap-4 w-full justify-center"
-            >
-              <span className="text-black font-extrabold tracking-[0.2em] uppercase text-sm drop-shadow-md">
-                By
-              </span>
-            </motion.div>
-
-            {/* Javix Logo */}
-            <motion.div
-              initial={{ opacity: 0, y: -20, filter: 'blur(10px)' }}
-              animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-              transition={{ duration: 1, delay: 1.6, ease: [0.16, 1, 0.3, 1] }}
-              className="mt-6 w-full flex justify-center"
-            >
-              <img
-                src={javixLogo}
-                alt="JAVIX"
-                className="h-12 md:h-14 w-auto block mx-auto object-contain"
-              />
-            </motion.div>
+            {/* "by Javix" Section */}
+            <div className="flex flex-col items-center justify-center mt-2">
+              <motion.span 
+                className="text-[#9CA3AF] font-medium tracking-[0.3em] uppercase text-[11px] flex"
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: { opacity: 1 },
+                  visible: {
+                    opacity: 1,
+                    transition: { staggerChildren: 0.04, delayChildren: 0.2 }
+                  }
+                }}
+              >
+                {"by Javix".split("").map((char, index) => (
+                  <motion.span
+                    key={index}
+                    variants={{
+                      hidden: { opacity: 0 },
+                      visible: { opacity: 1 }
+                    }}
+                  >
+                    {char === " " ? "\u00A0" : char}
+                  </motion.span>
+                ))}
+              </motion.span>
+            </div>
           </div>
         </motion.div>
       )}

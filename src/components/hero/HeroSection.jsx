@@ -1,5 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import PageContainer from '../layout/PageContainer';
 
 const fadeUp = {
@@ -12,18 +11,8 @@ const fadeUp = {
 };
 
 export default function HeroSection() {
-  const words = ["Yesterday", "Last Year", "Before"];
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % words.length);
-    }, 2500);
-    return () => clearInterval(interval);
-  }, [words.length]);
-
   return (
-    <section className="relative min-h-[60vh] flex flex-col justify-center pt-24 pb-12 overflow-hidden bg-white">
+    <section className="relative flex flex-col justify-center pt-12 pb-4 overflow-hidden bg-white">
 
 
       <PageContainer className="relative z-10 flex flex-col items-center text-center w-full h-full flex-grow pt-8">
@@ -31,31 +20,13 @@ export default function HeroSection() {
 
           <motion.h1 
             custom={0.1} initial="hidden" animate="visible" variants={fadeUp}
-            className="text-[48px] sm:text-[64px] md:text-[80px] lg:text-[96px] font-['Outfit'] font-light text-[#0A0F0D] leading-[1.0] tracking-tight mb-8 w-full"
+            className="text-[40px] sm:text-[56px] md:text-[72px] lg:text-[84px] font-sans font-normal text-[#0A0F0D] leading-[1.1] tracking-tight mb-0 w-full"
           >
-            Things That Didn't Exist<br />
-            <span className="text-[#43C47A] font-medium relative inline-block mt-4">
-              <AnimatePresence mode="wait">
-                <motion.span
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.4 }}
-                  className="inline-block"
-                >
-                  {words[index]}
-                </motion.span>
-              </AnimatePresence>
-            </span>
+            Our nicest work<br />
+            <span className="text-[#43C47A]">in front of you</span>
           </motion.h1>
           
-          <motion.p 
-            custom={1} initial="hidden" animate="visible" variants={fadeUp}
-            className="text-lg md:text-2xl text-gray-500 font-light max-w-2xl mx-auto leading-relaxed animate-pulse"
-          >
-            From intelligent platforms to digital experiences, we transform ambitious ideas into products built for the real world.
-          </motion.p>
+
         </div>
       </PageContainer>
     </section>

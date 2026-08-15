@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import javixLogo from '../../assets/logo/javix-logo-final.png';
 
@@ -12,6 +13,14 @@ export default function Preloader() {
     }, 2200);
     return () => clearTimeout(timer);
   }, []);
+
+  const location = useLocation();
+  
+  // Do not show the global preloader on the printrick page 
+  // because it has its own dedicated preloader
+  if (location.pathname === '/products/printrick') {
+    return null;
+  }
 
   return (
     <AnimatePresence mode="wait">

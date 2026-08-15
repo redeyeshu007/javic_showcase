@@ -6,14 +6,17 @@ import Footer from '../components/layout/Footer';
 import ProductHero from '../components/product-detail/ProductHero';
 import ProductMetrics from '../components/product-detail/ProductMetrics';
 import ProductOverview from '../components/product-detail/ProductOverview';
+import ProductPlanOfAction from '../components/product-detail/ProductPlanOfAction';
 import ProductGallery from '../components/product-detail/ProductGallery';
-import ProductMoodboard from '../components/product-detail/ProductMoodboard';
-import ProductIdea from '../components/product-detail/ProductIdea';
-import ProductVision from '../components/product-detail/ProductVision';
+import ProductLogos from '../components/product-detail/ProductLogos';
+import ProductChallenge from '../components/product-detail/ProductChallenge';
+import ProductDesign from '../components/product-detail/ProductDesign';
+import ProductConversions from '../components/product-detail/ProductConversions';
+import ProductFullBanner from '../components/product-detail/ProductFullBanner';
 import ProductOutcome from '../components/product-detail/ProductOutcome';
+import ProductVideos from '../components/product-detail/ProductVideos';
 import PrintrickPreloader from '../components/layout/PrintrickPreloader';
-
-
+import EastGoldPreloader from '../components/layout/EastGoldPreloader';
 export default function ProductDetails() {
   const { slug } = useParams();
   const product = getProductBySlug(slug);
@@ -27,6 +30,7 @@ export default function ProductDetails() {
   return (
     <div className="min-h-screen bg-white">
       {slug === 'printrick' && <PrintrickPreloader />}
+      {slug === 'east-gold' && <EastGoldPreloader />}
       <Navbar />
 
 
@@ -37,10 +41,13 @@ export default function ProductDetails() {
       {/* White content sections */}
       <div className="bg-white">
         <ProductOverview product={product} />
-        <ProductGallery product={product} />
-        <ProductMoodboard product={product} />
-        <ProductIdea product={product} />
-        <ProductVision product={product} />
+        <ProductPlanOfAction product={product} />
+        <ProductLogos product={product} />
+        <ProductChallenge product={product} />
+        <ProductFullBanner product={product} />
+        <ProductDesign product={product} />
+        <ProductConversions product={product} />
+        <ProductVideos product={product} />
         <ProductOutcome product={product} />
       </div>
 

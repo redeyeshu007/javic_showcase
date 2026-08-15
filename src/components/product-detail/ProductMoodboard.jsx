@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 export default function ProductMoodboard({ product }) {
   if (!product.moodboards || product.moodboards.length === 0) return null;
 
+  // Cool, professional background colors for the moodboard boxes
+  const boxColors = [
+    'bg-[#F0F4F8]', // soft cool blue-gray
+    'bg-[#E2E8F0]', // slightly deeper slate
+    'bg-[#CBD5E1]'  // deeper cool steel
+  ];
+
   return (
     <section className="pb-20 lg:pb-28 bg-white">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
@@ -26,7 +33,7 @@ export default function ProductMoodboard({ product }) {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <p className="text-[#4b5563] text-[15px] leading-relaxed">
+            <p className="text-[#4b5563] text-[15px] leading-relaxed text-justify">
               {product.moodboardDescription}
             </p>
           </motion.div>
@@ -38,20 +45,20 @@ export default function ProductMoodboard({ product }) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-40px' }}
           transition={{ duration: 0.7 }}
-          className="bg-[#FEFBE1] pt-12 pb-16 px-6 sm:px-12 rounded-sm" 
+          className="bg-[#F8FAFC] pt-12 pb-16 px-6 sm:px-12 rounded-2xl border border-slate-100" 
         >
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
             {product.moodboards.map((board, i) => (
               <div key={i} className="flex flex-col items-center">
-                <div className="w-full aspect-square bg-white shadow-sm mb-6 p-2 lg:p-3">
+                <div className={`w-full aspect-square shadow-sm mb-6 p-6 lg:p-10 flex items-center justify-center rounded-xl overflow-hidden ${boxColors[i % boxColors.length]}`}>
                   <img
                     src={board.image}
                     alt={board.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain mix-blend-multiply"
                     loading="lazy"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-[#1a1a1a]">
+                <h3 className="text-xl font-bold text-[#0F172A]">
                   {board.title}
                 </h3>
               </div>

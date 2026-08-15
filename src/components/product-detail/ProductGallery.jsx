@@ -4,11 +4,11 @@ export default function ProductGallery({ product }) {
   // Use up to 3 images, no deduplication so we can repeat the logo
   const images = (product.gallery || [product.image]).slice(0, 3);
   
-  // Background colors matching the reference image
+  // Background colors: Grey, Yellow, and Green
   const bgColors = [
-    'bg-[#FBF9F6]', // Light cream
-    'bg-[#FEFBE1]', // Pale yellow
-    'bg-[#EFD84F]'  // Vibrant yellow
+    'bg-gray-100', // Grey
+    'bg-yellow-100', // Yellow
+    'bg-green-100'  // Green
   ];
 
   return (

@@ -35,7 +35,7 @@ export default function ProductShowcase() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.45, delay: 0.12 }}
-            className="flex justify-center mb-12"
+            className="flex justify-center mb-2"
           >
             <ProductFilter
               categories={categories}
