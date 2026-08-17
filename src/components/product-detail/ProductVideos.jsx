@@ -14,7 +14,7 @@ export default function ProductVideos({ product }) {
           className="mb-12 text-center relative z-10"
         >
           <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#1a1a1a] tracking-tight max-w-4xl mx-auto">
-            Aligning Design with Stakeholder and Brand Vision
+            {product.videosTitle || "Aligning Design with Stakeholder and Brand Vision"}
           </h2>
         </motion.div>
 
@@ -46,7 +46,11 @@ export default function ProductVideos({ product }) {
             </div>
           )}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-2xl w-full relative z-10">
+          <div className={
+            product.videos.length > 2 
+              ? "grid grid-cols-2 lg:grid-cols-4 gap-0 w-full max-w-6xl relative z-10" 
+              : "grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-2xl w-full relative z-10"
+          }>
             {product.videos.map((videoSrc, idx) => (
               <motion.div
                 key={idx}
@@ -54,7 +58,7 @@ export default function ProductVideos({ product }) {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="w-full flex justify-center"
+                className="w-full h-full flex justify-center"
               >
                 <video 
                   src={videoSrc} 
@@ -62,7 +66,7 @@ export default function ProductVideos({ product }) {
                   loop 
                   muted 
                   playsInline
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </motion.div>
             ))}

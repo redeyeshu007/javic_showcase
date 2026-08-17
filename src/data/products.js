@@ -27,6 +27,25 @@ import eastGoldFullBanner from '../assets/products/east-gold-full-banner-new.png
 import eastGoldVideo1 from '../assets/products/east-gold-video-1.mp4';
 import eastGoldVideo2 from '../assets/products/east-gold-video-2.mp4';
 
+import adhenFoodsCard from '../assets/products/adhen-foods-card.png';
+import adhenFoodsLogo from '../assets/products/adhen-foods-logo.png';
+import adhenFoodsHero from '../assets/products/adhen-foods-hero.png';
+import adhenFoodsMb1 from '../assets/products/adhen-foods-mb-1.png';
+import adhenFoodsMb2 from '../assets/products/adhen-foods-mb-2.png';
+import adhenFoodsMb3 from '../assets/products/adhen-foods-mb-3.png';
+import adhenFoodsMb4 from '../assets/products/adhen-foods-mb-4.png';
+import adhenFoodsMb5 from '../assets/products/adhen-foods-mb-5.png';
+import adhenFoodsMb6 from '../assets/products/adhen-foods-mb-6.png';
+import adhenFoodsDesign from '../assets/products/adhen-foods-design.png';
+import adhenFoodsDesign2 from '../assets/products/adhen-foods-design-2.png';
+import adhenFoodsDesign3 from '../assets/products/adhen-foods-design-3.png';
+
+import adhenFoodsVideo1 from '../assets/products/adhen-foods-video-1.mp4';
+import adhenFoodsVideo2 from '../assets/products/adhen-foods-video-2.mp4';
+import adhenFoodsVideo3 from '../assets/products/adhen-foods-video-3.mp4';
+import adhenFoodsVideo4 from '../assets/products/adhen-foods-video-4.mp4';
+import adhenFoodsConversions from '../assets/products/adhen-foods-conversions.png';
+
 export const CATEGORIES = ['All', 'Development', 'UI/UX', 'Branding', 'Social Media', 'Marketing'];
 
 export const products = [
@@ -167,6 +186,59 @@ export const products = [
     videos: [eastGoldVideo1, eastGoldVideo2],
     outcomeDescription: "The newly developed website and continuous marketing strategy for East Gold successfully established their digital presence. By aligning the platform with their trustworthy evaluation process, the design enhances customer confidence, streamlines lead generation, and significantly improves their visibility across the Coimbatore market.",
     websiteUrl: "https://eastgold.co.in/"
+  },
+  {
+    id: 3,
+    slug: 'adhen-foods',
+    name: 'Adhen Foods',
+    category: 'FMCG',
+    categories: ['FMCG', 'Snacks', 'Food'],
+    tagline: 'Crunchy Makhana. Cheesy Goodness. Herby Twist.',
+    shortDescription: 'A deliciously crispy snack made for every cheerful snacking moment.',
+    description: 'SMACKOZ Makhana – Cheese & Herbs is a crunchy and delicious fox-nut snack packed with rich cheesy flavour and a touch of herbs. Light, crispy, and irresistibly tasty, it’s made for guilt-free snacking anytime, anywhere. With gluten-free, no palm oil, and no palmolein oil, it’s a flavourful snack that brings together taste and convenience.',
+    image: adhenFoodsHero,
+    thumbnail: adhenFoodsCard,
+    client: 'Adhen Foods',
+    route: '/products/adhen-foods',
+    metrics: [
+      { value: '45%', label: 'Sales Increase' },
+      { value: '3x', label: 'Brand Reach' },
+      { value: '12k+', label: 'Monthly Orders' },
+      { value: '99%', label: 'Positive Feedback' }
+    ],
+    overview: [
+      'SMACKOZ by Adhen Foods is revolutionizing the healthy snacking industry with their premium Makhana (fox-nut) products. Their signature Cheese & Herbs flavor combines traditional superfoods with modern, irresistible taste profiles.',
+      'Our goal was to position SMACKOZ as the go-to guilt-free snack for health-conscious consumers without compromising on the joy of eating, emphasizing their zero palm oil and gluten-free commitments.'
+    ],
+    objective: 'The primary objective for SMACKOZ was to build a vibrant, engaging brand identity and a robust e-commerce presence that appeals to both millennial snackers and health-conscious parents. We aimed to highlight the crunch, flavor, and health benefits of their Makhana products.',
+    challengeTitle: 'Key Challenges',
+    challengeSubtitle: 'Faced by Adhen Foods',
+    challenge: true,
+    challengesList: [
+      'Outdated and generic website with poor user experience',
+      'Weak online representation of brand legacy and USPs',
+      'Poor mobile optimization & Low engagement with distributors',
+      'Need for a strong digital marketing launch to establish brand legacy'
+    ],
+    scopeOfWork: ['Brand Strategy', 'E-commerce Website', 'Social Media Marketing', 'Ad Campaigns'],
+    duration: [
+      'Branding & Web: 6 Weeks',
+      'Marketing: Ongoing'
+    ],
+    designTitle: 'Mood boards for\nthe Brand',
+    designDescription: "The mood boards reflect SMACKOZ's vibrant energy, premium quality, and guilt-free snacking promise. Using electric yellows, deep blacks, and earthy accents, combined with bold typography and imagery of crispy makhana, the visuals create a fun, approachable, and exciting brand identity that guided the e-commerce platform and overall design.",
+    designGridImages: [adhenFoodsMb1, adhenFoodsMb2, adhenFoodsMb3, adhenFoodsMb4, adhenFoodsMb5, adhenFoodsMb6],
+    secondaryDesignTitle: 'Modern & Sleek\nDesign',
+    secondaryDesignDescription: "The modern and sleek design of the SMACKOZ platform aligns with the brand's energetic style, providing a seamless and intuitive user experience. The design effectively highlights the vibrant packaging and product benefits while maintaining a bold, premium aesthetic that resonates with both the brand vision and consumer expectations.",
+    secondaryDesignImages: [adhenFoodsDesign, adhenFoodsDesign2, adhenFoodsDesign3],
+    videosTitle: 'Dynamic Product Campaigns',
+    videos: [adhenFoodsVideo1, adhenFoodsVideo2, adhenFoodsVideo3, adhenFoodsVideo4],
+    conversionsTitle: 'Focusing on more\nConversions Tactics',
+    conversionsSubtitle: 'Check Out More on the website',
+    conversionsDescription: "The campaigns feature vibrant, bold colors and clean typography tailored for modern FMCG snacking. The imagery is energetic and appetizing, focusing on product details in premium settings. Rich tones and dynamic graphic patterns add a high-end feel. This aesthetic emphasizes quality, taste, and the joy of guilt-free snacking.",
+    conversionsImage: adhenFoodsConversions,
+    outcomeDescription: "The brand launch for SMACKOZ was a resounding success. The striking new visual identity and seamless e-commerce experience led to an immediate surge in online orders. Through targeted social media campaigns, we successfully positioned SMACKOZ as a top-tier, guilt-free snacking choice.",
+    websiteUrl: "https://adhenfoods.com/"
   }
 ];
 

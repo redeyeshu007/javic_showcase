@@ -17,6 +17,7 @@ import ProductOutcome from '../components/product-detail/ProductOutcome';
 import ProductVideos from '../components/product-detail/ProductVideos';
 import PrintrickPreloader from '../components/layout/PrintrickPreloader';
 import EastGoldPreloader from '../components/layout/EastGoldPreloader';
+import AdhenFoodsPreloader from '../components/layout/AdhenFoodsPreloader';
 export default function ProductDetails() {
   const { slug } = useParams();
   const product = getProductBySlug(slug);
@@ -31,6 +32,7 @@ export default function ProductDetails() {
     <div className="min-h-screen bg-white">
       {slug === 'printrick' && <PrintrickPreloader />}
       {slug === 'east-gold' && <EastGoldPreloader />}
+      {slug === 'adhen-foods' && <AdhenFoodsPreloader />}
       <Navbar />
 
 
@@ -46,8 +48,8 @@ export default function ProductDetails() {
         <ProductChallenge product={product} />
         <ProductFullBanner product={product} />
         <ProductDesign product={product} />
-        <ProductConversions product={product} />
         <ProductVideos product={product} />
+        <ProductConversions product={product} />
         <ProductOutcome product={product} />
       </div>
 
