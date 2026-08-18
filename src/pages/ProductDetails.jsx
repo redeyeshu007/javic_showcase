@@ -18,6 +18,7 @@ import ProductVideos from '../components/product-detail/ProductVideos';
 import PrintrickPreloader from '../components/layout/PrintrickPreloader';
 import EastGoldPreloader from '../components/layout/EastGoldPreloader';
 import AdhenFoodsPreloader from '../components/layout/AdhenFoodsPreloader';
+import RoohaeCardsPreloader from '../components/layout/RoohaeCardsPreloader';
 export default function ProductDetails() {
   const { slug } = useParams();
   const product = getProductBySlug(slug);
@@ -33,6 +34,7 @@ export default function ProductDetails() {
       {slug === 'printrick' && <PrintrickPreloader />}
       {slug === 'east-gold' && <EastGoldPreloader />}
       {slug === 'adhen-foods' && <AdhenFoodsPreloader />}
+      {slug === 'roohae-cards' && <RoohaeCardsPreloader />}
       <Navbar />
 
 

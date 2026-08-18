@@ -44,7 +44,16 @@ import adhenFoodsVideo1 from '../assets/products/adhen-foods-video-1.mp4';
 import adhenFoodsVideo2 from '../assets/products/adhen-foods-video-2.mp4';
 import adhenFoodsVideo3 from '../assets/products/adhen-foods-video-3.mp4';
 import adhenFoodsVideo4 from '../assets/products/adhen-foods-video-4.mp4';
-import adhenFoodsConversions from '../assets/products/adhen-foods-conversions.png';
+import adhenFoodsConversions from '../assets/products/adhen-foods-conversions-new.png';
+
+import roohaeCardsCard from '../assets/products/roohae-cards-card.png';
+import roohaeCardsHero from '../assets/products/roohae-cards-hero.png';
+import roohaeCardsPlanImage from '../assets/products/roohae-cards-plan-image.png';
+import roohaeCardsDesignImage from '../assets/products/roohae-cards-design-image.png';
+import roohaeCardsDesignImage2 from '../assets/products/roohae-cards-design-image-2.png';
+import roohaeCardsDesignImage3 from '../assets/products/roohae-cards-design-image-3.png';
+import roohaeCardsSecondaryDesign from '../assets/products/roohae-cards-secondary-design-new.png';
+import roohaeCardsSecondaryVideo from '../assets/products/roohae-cards-brand-film.mp4';
 
 export const CATEGORIES = ['All', 'Development', 'UI/UX', 'Branding', 'Social Media', 'Marketing'];
 
@@ -239,6 +248,59 @@ export const products = [
     conversionsImage: adhenFoodsConversions,
     outcomeDescription: "The brand launch for SMACKOZ was a resounding success. The striking new visual identity and seamless e-commerce experience led to an immediate surge in online orders. Through targeted social media campaigns, we successfully positioned SMACKOZ as a top-tier, guilt-free snacking choice.",
     websiteUrl: "https://adhenfoods.com/"
+  },
+  {
+    id: 4,
+    slug: 'roohae-cards',
+    route: '/products/roohae-cards',
+    name: 'Roohae Cards',
+    category: 'Development',
+    categories: ['Development', 'B2B', 'Infrastructure'],
+    tagline: 'An embedded Canva-like B2B design customization platform.',
+    shortDescription: 'Roohae Cards is a Canva-like B2B design customization platform where companies can provide their customers with ready-made product designs that customers can personalize themselves.',
+    thumbnail: roohaeCardsCard,
+    image: roohaeCardsHero,
+    overview: [
+      'Roohae Cards is a paradigm shift from traditional B2C card-design websites. It was built from the ground up to act as an embedded, highly customizable design infrastructure that third-party companies can leverage within their own digital ecosystems.',
+      'Instead of forcing companies to build complex browser-based rendering tools, Roohae Cards provides a drop-in Canvas-based UI editor that lets end-customers effortlessly personalize products before checkout. By utilizing deep API hooks and a robust white-labeling engine, the entire journey feels like a native extension of the partner brand, while Roohae handles the heavy lifting of backend PDF generation and secure asset handoffs.'
+    ],
+    objective: 'To build a highly scalable, white-labeled design infrastructure that allows B2B partners to embed a robust, Canva-like product personalization editor seamlessly into their own e-commerce flows.',
+    scopeOfWork: [
+      'Infrastructure Architecture',
+      'API & SDK Development',
+      'Canvas-based UI Editor',
+      'Backend Rendering'
+    ],
+    duration: [
+      'Total Duration: 6 Months',
+      'Architecture Phase: 4 Weeks',
+      'Development Phase: 16 Weeks',
+      'Testing & QA Phase: 4 Weeks'
+    ],
+    client: 'Internal SaaS Initiative',
+    metrics: [
+      { value: '500+', label: 'B2B Partners Onboarded' }
+    ],
+    planOfAction: "The project for Roohae Cards involved architectural planning to build a scalable B2B infrastructure. We began by establishing API integration blueprints and creating modular, white-labeled UI components for the Canvas editor. Next, we optimized the backend rendering engine to generate print-ready assets in real-time. The final phase involved deploying secure data hand-off pipelines, allowing partners to seamlessly embed the platform while retaining full control over their customer data.",
+    planOfActionImage: roohaeCardsPlanImage,
+    challengeTitle: 'Key Challenges',
+    challengeSubtitle: 'Faced by Roohae Cards',
+    challenge: true,
+    challengesList: [
+      'Lack of native, white-labeled design tools for seamless e-commerce integration',
+      'Complex rendering bottlenecks when exporting high-quality, print-ready PDFs and PNGs',
+      'High user drop-off caused by friction between product selection and external design apps',
+      'Securely syncing customized design assets and user data with disparate B2B backend APIs'
+    ],
+    designTitle: 'Intuitive &\nModular Design',
+    designDescription: "The Roohae Cards editor was engineered with a modular, highly intuitive design philosophy. Prioritizing frictionless customization, the interface utilizes sleek, unopinionated UI components that seamlessly adopt the partner brand's visual identity. The result is a premium, distraction-free environment that empowers end-users to confidently personalize their designs without ever feeling like they've left the original e-commerce platform.",
+    designImages: [roohaeCardsDesignImage],
+    secondaryDesignTitle: "Aligning Design with Stakeholder and Brand Vision",
+    secondaryDesignDescription: "Roohae Cards seamlessly adapts to any partner's visual identity. Through customizable themes and smart layout constraints, users can easily personalize their products while remaining perfectly within the brand's aesthetic boundaries.",
+    secondaryDesignImages: [roohaeCardsSecondaryDesign],
+    secondaryDesignVideo: roohaeCardsSecondaryVideo,
+    outcomeDescription: "Since launching the embedded infrastructure, Roohae Cards has been successfully integrated into dozens of e-commerce platforms. The robust API handoff ensures that partner companies retain full control over their customer data, while offloading the complex rendering and editing logic entirely to Roohae.",
+    websiteUrl: "#"
   }
 ];
 

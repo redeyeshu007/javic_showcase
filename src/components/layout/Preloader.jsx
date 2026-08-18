@@ -16,9 +16,16 @@ export default function Preloader() {
 
   const location = useLocation();
   
-  // Do not show the global preloader on the printrick page 
-  // because it has its own dedicated preloader
-  if (location.pathname === '/products/printrick') {
+  // Do not show the global preloader on product pages 
+  // because they have their own dedicated preloaders
+  const specificPreloaders = [
+    '/products/printrick',
+    '/products/east-gold',
+    '/products/adhen-foods',
+    '/products/roohae-cards'
+  ];
+  
+  if (specificPreloaders.includes(location.pathname)) {
     return null;
   }
 
