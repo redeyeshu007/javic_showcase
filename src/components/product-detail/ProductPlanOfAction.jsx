@@ -26,7 +26,7 @@ export default function ProductPlanOfAction({ product }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1], delay: 0.1 }}
-            className="flex flex-col gap-6 pt-2 text-justify"
+            className="flex flex-col gap-6 pt-2 text-justify relative z-10"
           >
             {Array.isArray(product.planOfAction) ? (
               product.planOfAction.map((paragraph, idx) => (
@@ -48,7 +48,7 @@ export default function ProductPlanOfAction({ product }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1], delay: 0.2 }}
-            className="mt-16 w-full flex justify-center"
+            className="-mt-8 md:-mt-16 -mb-12 md:-mb-24 w-full flex justify-center"
           >
             <img 
               src={product.planOfActionImage} 

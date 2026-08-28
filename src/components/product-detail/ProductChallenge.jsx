@@ -4,7 +4,7 @@ export default function ProductChallenge({ product }) {
   if (!product.challenge) return null;
 
   return (
-    <section className="pt-8 pb-20 lg:pt-12 lg:pb-28 bg-white">
+    <section className="pt-8 pb-20 lg:pt-12 lg:pb-28 bg-white relative z-20">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 lg:gap-24 items-start">
           

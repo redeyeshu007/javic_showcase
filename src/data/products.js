@@ -55,6 +55,18 @@ import roohaeCardsDesignImage3 from '../assets/products/roohae-cards-design-imag
 import roohaeCardsSecondaryDesign from '../assets/products/roohae-cards-secondary-design-new.png';
 import roohaeCardsSecondaryVideo from '../assets/products/roohae-cards-brand-film.mp4';
 
+import handoverlyHero from '../assets/products/handoverly-hero.png';
+import handoverlyHero2 from '../assets/products/handoverly-hero-2.png';
+import handoverlyLogo from '../assets/products/handoverly-logo.png';
+import handoverlyInside from '../assets/products/handoverly-inside.png';
+import handoverlyPlan from '../assets/products/handoverly-plan.png';
+import handoverlyPlan2 from '../assets/products/handoverly-plan-2.png';
+import handoverlyDesign from '../assets/products/handoverly-design.png';
+import handoverlyDesign2 from '../assets/products/handoverly-design-2.png';
+import handoverlyDesign3 from '../assets/products/handoverly-design-3.png';
+import handoverlyDesign4 from '../assets/products/handoverly-design-4.png';
+import handoverlySecondaryDesign from '../assets/products/handoverly-secondary-design.png';
+
 export const CATEGORIES = ['All', 'Development', 'UI/UX', 'Branding', 'Social Media', 'Marketing'];
 
 export const products = [
@@ -300,6 +312,56 @@ export const products = [
     secondaryDesignImages: [roohaeCardsSecondaryDesign],
     secondaryDesignVideo: roohaeCardsSecondaryVideo,
     outcomeDescription: "Since launching the embedded infrastructure, Roohae Cards has been successfully integrated into dozens of e-commerce platforms. The robust API handoff ensures that partner companies retain full control over their customer data, while offloading the complex rendering and editing logic entirely to Roohae.",
+    websiteUrl: "#"
+  },
+  {
+    id: 5,
+    name: 'Handoverly AI',
+    slug: 'handoverly-ai',
+    route: '/products/handoverly-ai',
+    category: 'Development',
+    categories: ['Development', 'Real Estate', 'B2B'],
+    tagline: 'A unified operating system for property project completion and handover.',
+    shortDescription: 'Handoverly AI is a comprehensive operating system that helps builders seamlessly manage project completions, unit inspections, defect resolutions, and the final property handover to customers.',
+    thumbnail: handoverlyHero,
+    image: handoverlyHero2,
+    overview: [
+      'Handoverly AI is a builder project-completion, customer-handover, defect-resolution, warranty, and association-transition platform.',
+      'It helps builders manage the complete process from the stage when a property is nearing completion until the unit and common areas are officially handed over.',
+      'Traditionally, builders have relied on fragmented tools like WhatsApp groups, Excel sheets, and paper checklists. This often leads to unstructured customer messages, missing property documents, and delayed contractor work.',
+      'By centralizing operations, Handoverly AI brings all stakeholders—from project managers and site engineers to contractors and home buyers—into one organized system, ensuring transparency, accountability, and an exceptional customer experience.'
+    ],
+    objective: 'To build a unified operating system that streamlines the handover workflow, empowering builders to manage unit inspection, automate defect tracking, and digitize the final property handover.',
+    scopeOfWork: [
+      'Infrastructure Architecture',
+      'Dashboard & Mobile UI',
+      'Workflow Automation',
+      'Document Management'
+    ],
+    duration: [
+      'Total Duration: 8 Months',
+      'System Architecture: 4 Weeks',
+      'Development Phase: 24 Weeks',
+      'Testing & QA Phase: 4 Weeks'
+    ],
+    client: 'Internal SaaS Initiative',
+    metrics: [
+      { value: '10,000+', label: 'Units Handed Over' }
+    ],
+    challenge: [
+      `Handoverly AI is a comprehensive operating system built specifically for the real estate and construction sectors. When we analyzed the traditional handover process, we found it was highly fragmented, relying heavily on disjointed WhatsApp groups, spreadsheets, and manual checklists.`,
+      `With project managers and contractors spending hours each week tracking down missing documents and unresolved defects, the existing workflow was prone to errors and costly delays. We needed to transform this chaotic process into a centralized, intelligent platform that scales effortlessly while ensuring complete transparency for the home buyer.`
+    ],
+    planOfActionTitle: 'Streamlining Builder Handovers',
+    planOfAction: "The project for Handoverly AI involved a deep-dive analysis into the fragmented workflow of builders, replacing disjointed tools with a unified architecture. We mapped out role-based permissions and structured milestones, then designed a modular, intuitive dashboard tailored for various stakeholders. The final phase focused on developing a secure, centralized document and defect management system, ultimately delivering an end-to-end OS that digitizes the entire customer handover process.",
+    planOfActionImage: handoverlyPlan2,
+    designTitle: 'Modern & Sleek\nDesign',
+    designDescription: "The modern and sleek design of the Handoverly AI platform aligns with the brand's sophisticated style, providing a seamless and intuitive user experience. The design effectively highlights the robust project management capabilities while maintaining a clean, elegant aesthetic that resonates with both the brand vision and builder expectations.",
+    designImages: [handoverlyDesign, handoverlyDesign2, handoverlyDesign3, handoverlyDesign4],
+    secondaryDesignTitle: "Aligning Design with Stakeholder and Brand Vision",
+    secondaryDesignDescription: "Handoverly AI seamlessly adapts to any partner's visual identity. Through customizable themes and smart layout constraints, builders and stakeholders can easily personalize their dashboards while remaining perfectly within the brand's aesthetic boundaries.",
+    secondaryDesignImages: [handoverlySecondaryDesign],
+    outcomeDescription: "By consolidating communication, inspections, and document management into a single source of truth, Handoverly AI significantly reduces handover delays, eliminates defect-resolution friction, and delivers an exceptional, transparent experience for new property owners.",
     websiteUrl: "#"
   }
 ];
